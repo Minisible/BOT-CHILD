@@ -210,47 +210,39 @@ if (teks == 'game') tags = {
     {title: `╿💬╽All`, rowId: ".? all", description: "⤷ Menampilkan Semua command BOT"},
     {title: `╿🌱╽Rpg`, rowId: ".? rpg", description: "⤷ Game Epic Rpg!"},
     {title: `╿📣╽VN`, rowId: ".menuvn", description: "⤷ Random VN!"},
-	{title: `╿✨╽Exp`, rowId: ".? xp", description: "⤷ Ayo tingkatkan pangkat mu!"},
+	  {title: `╿✨╽Exp`, rowId: ".? xp", description: "⤷ Ayo tingkatkan pangkat mu!"},
         
     {title: `╿📸╽Image`, rowId: ".? image", description: "⤷ Random search image"},
-	{title: `╿🎮╽Game`, rowId: ".? game", description: "⤷ Gamenya seru seru lho >-<"},
-	{title: `╿🧩╽Fun`, rowId: ".? fun", description: "⤷ Fitur yang aman untuk keluarga"},
-	{title: `╿🐚╽ Kerang`, rowId: ".? kerangajaib", description: "⤷ Tanyakan pada ketua club"},
-	{title: `╿📑╽Quotes`, rowId: ".? quotes", description: "⤷ Random Inspirasi"},
-	{title: `╿⛩️╽Anime`, rowId: ".? anime", description: "⤷ Kamu wibu ya bang?"},
-	{title: `╿🔞╽Nsfw`, rowId: ".? nsfw", description: "⤷ Tch, dasar sagne"},
-	{title: `╿🌟╽Premium`, rowId: ".? premium", description: "⤷ Only premium Users"},
-	{title: `╿🎭╽Anonymous Chats`, rowId: ".? anonymous", description: "⤷ Bicara dengan orang tidak dikenal"},
-	{title: `╿📖╽Al-Quran`, rowId: ".? quran", description: "⤷ Tobat yuk kak"},
-	{title: `╿🌎╽Internet`, rowId: ".? internet", description: "⤷ Cari sesuatu diBOT"},
-	{title: `╿📩╽Downloaders`, rowId: ".? downloader", description: "⤷ Download sesuatu diBOT"},
-	{title: `╿🎨╽Stikers`, rowId: ".? stiker", description: "⤷ Buat Sticker diBOT"},
-	{title: `╿✏️╽Nulis`, rowId: ".? nulis", description: "⤷ Nulis kok males kak?"},
-	{title: `╿🎧╽Audio`, rowId: ".? audio", description: "⤷ Ubah Audio dengan Filter"},
-	{title: `╿🏢╽Group`, rowId: ".? group", description: "⤷ Only Groups"},
-	{title: `╿👑╽Admin`, rowId: ".? admin", description: "⤷ Only Admin Group"},
-	{title: `╿🗂️╽Database`, rowId: ".? database", description: "⤷ Simpan sesuatu diBOT"},
-	{title: `╿🛠️╽Tools`, rowId: ".? tools", description: "⤷ Mungkin tools ini bisa membantu?"},
-	{title: `╿ℹ️╽Info`, rowId: ".? info", description: "⤷ Info info BOT"},
-	{title: `╿👩‍╽Owner`, rowId: ".? owner", description: "⤷ Owner Only!"},
-	{title: `╿❓╽No Category`, rowId: ".? nocategory", description: "⤷ Fitur tanpa kategory!"},
-	]
-  },
-]
+    {title: `╿🎮╽Game`, rowId: ".? game", description: "⤷ Gamenya seru seru lho >-<"},
+    {title: `╿🧩╽Fun`, rowId: ".? fun", description: "⤷ Fitur yang aman untuk keluarga"},
+    {title: `╿🐚╽ Kerang`, rowId: ".? kerangajaib", description: "⤷ Tanyakan pada ketua club"},
+    {title: `╿📑╽Quotes`, rowId: ".? quotes", description: "⤷ Random Inspirasi"},
+    {title: `╿⛩️╽Anime`, rowId: ".? anime", description: "⤷ Kamu wibu ya bang?"},
+    {title: `╿🔞╽Nsfw`, rowId: ".? nsfw", description: "⤷ Tch, dasar sagne"},
+    {title: `╿🌟╽Premium`, rowId: ".? premium", description: "⤷ Only premium Users"},
+    {title: `╿🎭╽Anonymous Chats`, rowId: ".? anonymous", description: "⤷ Bicara dengan orang tidak dikenal"},
+    {title: `╿📖╽Al-Quran`, rowId: ".? quran", description: "⤷ Tobat yuk kak"},
+    {title: `╿🌎╽Internet`, rowId: ".? internet", description: "⤷ Cari sesuatu diBOT"},
+    {title: `╿📩╽Downloaders`, rowId: ".? downloader", description: "⤷ Download sesuatu diBOT"},
+    {title: `╿🎨╽Stikers`, rowId: ".? stiker", description: "⤷ Buat Sticker diBOT"},
+    {title: `╿✏️╽Nulis`, rowId: ".? nulis", description: "⤷ Nulis kok males kak?"},
+    {title: `╿🎧╽Audio`, rowId: ".? audio", description: "⤷ Ubah Audio dengan Filter"},
+    {title: `╿🏢╽Group`, rowId: ".? group", description: "⤷ Only Groups"},
+    {title: `╿👑╽Admin`, rowId: ".? admin", description: "⤷ Only Admin Group"},
+    {title: `╿🗂️╽Database`, rowId: ".? database", description: "⤷ Simpan sesuatu diBOT"},
+    {title: `╿🛠️╽Tools`, rowId: ".? tools", description: "⤷ Mungkin tools ini bisa membantu?"},
+    {title: `╿ℹ️╽Info`, rowId: ".? info", description: "⤷ Info info BOT"},
+    {title: `╿👩‍╽Owner`, rowId: ".? owner", description: "⤷ Owner Only!"},
+    {title: `╿❓╽No Category`, rowId: ".? nocategory", description: "⤷ Fitur tanpa kategory!"},
+	      ]
+    },
+  ]
 
 let usrs = db.data.users[m.sender]
-let tek = `*${ucapan()} ${conn.getName(m.sender)}*
-📄 *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-🏷 *ᴛᴀɢs:* @${m.sender.split`@`[0]}
-🎟 *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-🃏 *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
-🏅 *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
-${clockStringP(usrs.premiumTime - new Date())}` : ''}
-`
+let tek = `*${ucapan()} ${conn.getName(m.sender)}*`
 const listMessage = {
   text: tek,
-  footer: '⚠️ *Note:* Mohon tidak _SPAM_ saat menggunakan BOT agar tidak di Banned\n\nhttps://saweria.co/nvkenn',
+  footer: '⚠️ *Note:* Mohon Gunakan BOT secara Bijak\n\nhttps://google.com',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
   buttonText: `LIST MENU ⎙`,
